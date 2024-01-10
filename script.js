@@ -1,3 +1,7 @@
+// Lynn Owen
+// Expanding Cards
+
+
 const panels = document.querySelectorAll('.panel')
 
 function removeActiveClassess() {
