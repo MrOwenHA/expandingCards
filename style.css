@@ -1,9 +1,5 @@
-/* Lynn Owen
-Expanding Cards */
-
-* {
-    box-sizing: border-box;
-}
+/* Lynn Owen */
+/* Expanding Cards */
 
 body {
     font-family: sans-serif;
@@ -11,7 +7,6 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: lightcyan;
-    overflow: hidden;
 }
 
 h1 {
@@ -20,17 +15,13 @@ h1 {
 
 div {
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 90vh;
-    /* overflow: hidden; */
+    overflow: hidden;
     margin: 0;
 }
 
-.container  {
-    display: flex;
+.container {
     width: 90vw;
-    background-size: 30%;
 }
 
 .panel {
@@ -39,9 +30,9 @@ div {
     background-repeat: no-repeat;
     height: 80vh;
     border-radius: 50px;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
-    flex: .5;
+    flex: 0.5;
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
@@ -63,4 +54,15 @@ div {
 .panel.active h3 {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
 }

@@ -12,12 +12,9 @@ function removeActiveClassess() {
 }
 
 panels.forEach((panel) => {
-    console.log(panel);
     panel.addEventListener('click', () => {
-        console.log(panel);
         removeActiveClassess();
         panel.classList.add('active');
-        console.log(panels);
     });
 });
 
